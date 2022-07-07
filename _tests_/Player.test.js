@@ -1,5 +1,5 @@
 const Player = require('../lib/Player');
-
+jest.mock('../lib/Potion');
 
 test('creates a player object', () =>{
     const player = new Player('Dave');
@@ -82,4 +82,3 @@ test('uses a potion from inventory', () => {
 
 const Potion = require('../lib/Potion');
 
-jest.mock('../lib/Potion');
